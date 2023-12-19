@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+<style>
+    .image-container {
+	   width: 200px; /* Adjust the width of the image */
+      height: 400px; /* Adjust the height of the image */
+	   margin-top: 30px;    /* Set the desired top margin */
+    margin-bottom: 30px; /* Set the desired bottom margin */
+	  
+    }
+	.image-container img {
+      width: 100%; /* Makes the image fill the circular container */
+      height: 100%; /* Makes the image fill the circular container */
+      object-fit: cover; /* Maintains the image's aspect ratio while filling the container */
+    }
+	
+
+
+
+  </style>
+  
+
+<!-- Basic Page Needs
+         ================================================== -->
+<meta charset="utf-8">
+<title>CrossFit App - Documentation</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas	
+         ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- CSS
+         ================================================== -->
+<link rel="stylesheet" href="css/style.css" type="text/css"  media="all">
+<link rel="stylesheet" href="css/print.css" type="text/css"  media="print">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:300,400" 
+rel="stylesheet" type="text/css">
+<!-- JS
+         ================================================== -->
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<!--[if lt IE 9]>
+      <script src="js/modernizr.custom.11889.js" type="text/javascript"></script>
+      <![endif]-->
+<!-- HTML5 Shiv events (end)-->
+<!-- Favicons
+         ================================================== -->
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<!-- Primary Page Layout
+         ================================================== -->
+<div id="wrap" class="colorskin-0">
+  <!-- end-header -->
+  <section class="container">
+    <div class="row">
+      <div id="header-sm">
+        <div class="col-md-3 logo"> <a href="index.html"><img src="images/mojoomla_logo.jpg" width="150" id="img-logo" alt="logo"></a> </div>
+        <div class="col-md-8 col-md-offset-1 desc">
+          <h4 class="slight">CrossFit App</h4>
+          <h5 class="slight"><small> Documented by Mojoomla - at June 01 2023</small></h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <aside id="side-nav">
+          <div class="logo"> <img src="images/mojoomla_logo.png" id="img-logo" alt="mojoomla" style="margin-bottom:20px;"> </div>
+          <ul id="top-menu">
+           
+			  <li><a href="#setting-up-android-project">setting up Android Project</a></li>
+			  			  <li><a href="#flutter-version">Flutter Version</a></li>
+
+			  <li><a href="#set-up-firebase-project">set up Firebase</a></li>
+			  <li><a href="#set-up-email-notification">set up Email Notification</a></li>
+			  			   <li><a href="#change-app-name">Change App Name</a></li>
+			   <li><a href="#change-logo">Change App Logo</a></li>
+			   <li><a href="#change-packae-name">Change Package Name</a></li>
+			   			<li><a href="#relece_build">Create Release Build</a></li>
+				  <li><a href="#app_pages">CrossFit App Pages</a>
+				  <ul><li><a href="#fronted-login">Login Page</a></li>
+			<li><a href="#admin_view">Admin View</a></li>
+			<li><a href="#trainer_view">Trainer View</a></li>
+			<li><a href="#member_view">Member View</a></li>
+						</ul></li>
+			<li><a href="https://play.google.com/store/apps/details?id=crossfit.personaltrainer.gymtrainer.fitness" target="_blank">Download App</a></li>
+
+			        </ul>
+
+        </aside>
+      </div>
+      <div class="col-md-8">
+        <section  id="Introduction">
+          <div id="header" class="row">
+            <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo" height="110" width="100"></a> </div>
+            <div class="col-md-8 col-md-offset-1 desc">
+              <h4 class="slight">CrossFit App <sub><small></small></sub></h4>
+              <h5 class="slight"><small> Documented by Mojoomla</a> - at June 01 2023</small></h5>
+            </div>
+          </div>
+          <hr class="vertical-space2">
+          <p align="center"><img src="images/preview-image1.png"></p>
+         
+
+		
+		  <section id="setting-up-android-project">
+		  <hr class="vertical-space2">
+			    <h3><strong>1). <u>Set up Flutter Project</u></strong></h3>
+				<br>
+               <h5><strong>A. <u>Requirement</u></strong></h5>
+              <ol >
+			    <li>Latest <a href="http://developer.android.com/sdk/index.html" target="_blank">Android Studio</a></li>
+				<li>Windows XP (32-bit), Vista (32- or 64-bit), or Windows 7 And up (32- or 64-bit) </li>
+				<li>Mac OS X 10.5.8 or later (x86 only)</li>
+				<li>Linux (tested on Ubuntu Linux, Lucid Lynx) </li>
+				<li>GNU C Library (glibc) 2.7 or later is required. </li>
+				<li>On Ubuntu Linux, version 8.04 or later is required.64-bit distributions must be capable of running 32-bit applications. </li>
+                <li>4 GB RAM minimum, 8 GB RAM recommended.</li>   
+				<li>Free Disk At least 1 GB for Android SDK, emulator system images, and caches.</li>
+				<li>Oracle® Java Development Kit (JDK) 8 and up.</li>
+               </ol>
+			   
+			  <h5><strong>B. <u>Installing the latest version of Android Studio.</u></strong></h5>
+             <code>CrossFit App is built with the latest Android studio <strong>Hedgehog | 2023.1.1</strong></br><strong> NOTE:</strong> There are several other tools to build and run android projects.</code>
+				           
+		   <ol>
+				<li>	Go to the <a href = "http://developer.android.com/sdk/index.html" target="_blank"> Android Developer Page</a> </li>
+				<li> Download the Android Studio. This should contain the latest version of Android Studio </li>
+			<li> Install Android studio. more information Go to <a href = "https://developer.android.com/studio/install.html"  target="_blank">install Android studio</a></li>
+				
+				<!-- <li> Run Eclipse.exe </li> -->
+			</ol>
+			
+			<h5><strong>C. <u>Update the IDE and SDK Tools</u></strong></h5>
+			<ol>
+				<li>The Android SDK Manager provides the SDK tools, platforms, and other components you need to develop your apps.</li>
+				<li>CrossFit App minimum required SDK Platform API level <Strong>21</strong></li>
+				<li>Install SDK Platform API levels.</li>
+				<li>Open the Preferences window by clicking File -> Settings.</li>
+				<li>In the left panel, click Appearance & Behavior -> System Settings -> Android SDK.</li>
+				<li>Select required SDK platforms</li>
+				<li> Click ok.</li>
+			</ol>
+			
+			
+			<section id = "flutter-version"><h3><strong>2).<u>Flutter Version</u></strong></h3>
+			  <p>environment: </br>
+  sdk: '>=2.18.4 <3.0.0' </p>
+			  </section>
+			
+			<section id="set-up-firebase-project">
+				   <h3><strong>3).<u>Set Up Firebase</u></strong></h3>
+				   <p>To set up Firebase Database for a CrossFit app, follow these step-by-step instructions:</p>
+				   <p>
+				   <strong>Step 1: Create a Firebase project</strong>
+				   <li>Go to the Firebase console <strong><a href="https://console.firebase.google.com/" target="_blank">(https://console.firebase.google.com/)</a></strong> and sign in with your Google account.</li>
+				   <li>Click on "Add project" or select an existing project if you have one.</li>
+				   <li>Enter a name for your project and optionally choose a country/region.</li>
+				   <li>Click on "Create Project" to create the Firebase project.</li>
+				   </p>
+	
+				   <p><strong>Step 2: Connect your app to Firebase</strong>
+				   <li>In the Firebase console, go to your project.</li>
+				   <li>Click on the "Add app" button to add your Flutter app.</li>
+				   <li>Follow the instructions to register your app, providing the app package name (usually "com.example.your_app") and app nickname.</li>
+				   <li>Download the <strong>google-services.json</strong> file and place it in the <strong>android/app</strong> directory of your Flutter project.</li>
+				   </p>
+				   
+				   <p><strong>Step 3: Add your app Indexes</strong>
+				   <li>Click on "Firestore Database" → then click on "Indexes tab" → and finally click on "Add Index" Thne Fill Detail Like This Image.</li>
+				   <img alt="" src="images/application/addIndexing.png"></br>
+				   <li>After configuring the index, click on the "Create Index" button to add it to your Firestore database.</li>
+				   <li>Firestore will process the index creation request, which may take some time depending on the size of your database. You can check the status of the index creation on the "Indexes" page. Once the index status changes to "Enabled," the index is ready to use.</li>
+				   <li>Add all the Indexes below by following the above steps</li>
+				   <img alt="" src="images/application/indexList.png">
+				   </p>
+				   
+		</section>
+		<section id="set-up-email-notification">
+				   <h3><strong>4).<u>Set Up Email Notification</u></strong></h3>
+				   <p>To set up Email Notification for a CrossFit app, follow these step-by-step instructions:</p>
+				   <p>
+				   <strong>Step 1: Create a Sendinblue account</strong>
+				   <li>Go to the Sendinblue website using your preferred web browser.Go to the Sendinblue website using your preferred web browser. The website URL is <strong><a href="https://www.sendinblue.com/" target="_blank">(https://www.sendinblue.com/)</a></strong>.</li>
+				   <li>Click on "Sign Up" or "Get Started": On the homepage, you'll usually find a prominent "Sign Up" or "Get Started" button. Click on it to begin the account creation process.</li>
+				   <li>Select your account type: Sendinblue offers different types of accounts based on your needs. Choose the appropriate account type based on the features and functionalities you require. The options usually include "Free," "Lite," "Premium," and "Enterprise."</li>
+				   <li>Fill in the required information: You'll be presented with a form where you need to provide your details. Typically, the form includes fields such as your name, email address, and a password. Fill in the necessary information accurately.</li>
+				   <li>Verify your email address: After completing the form, you'll receive an email from Sendinblue to verify your email address. Click on the verification link provided in the email to confirm your account.</li>
+				   <li>Set up your account: Once your email address is verified, you'll be directed to the Sendinblue dashboard or a setup wizard. Follow the on-screen instructions to configure your account settings, including your organization's name, contact details, and any additional information required.</li>
+				   <li>Explore Sendinblue features: Once your account setup is complete, you can start exploring the various features and functionalities offered by Sendinblue. These may include email marketing, SMS campaigns, automation workflows, contact management, and more.</li>
+				   </p>
+	
+				   <p><strong>Step 2: Connect your app with SMTP & API</strong>
+				   <li>Go Sendinblue dashboard.</li></br>
+				   <img alt="" src="images/application/sendinblue.png"></br></br>
+				   <li>In the SMTP section, you'll find your SMTP credentials. Make a note of the SMTP server, port number, username, and password. You'll need these details to configure your email notifications.</li></br>
+				   <img alt="" src="images/application/smtp-api.png"></br>
+				   <li>Now, you'll need to integrate Sendinblue with your application or platform. Sendinblue provides various integration options, such as SMTP, API, plugins, and libraries. Choose the integration method that suits your needs.</li>
+				   <li>Click Generate a new SMTP key. Add the name of your SMTP key and Generate then copy this smtp key.</li></br>
+				   <img alt="" src="images/application/change-smtp-details.png"></br></br>
+				   <li>Changes the value of sendinblueEmailFrom, sendinblueEmailName, sendinblueSMTPServerPort, sendinblueSMTPPassword.</li></br>
+				   <li>SendinblueSMTPPassword is your SMTP Master PassWord.</li></br>
+
+				   </p>
+				   
+		</section>
+			 
+		<section id = "change-app-name"> 
+
+<h3> <strong>5).<u>Change Application name</u></strong></h3>
+        <p>Change the application name To change the name of a Flutter app, you need to modify the appropriate files and configurations. Here's a step-by-step guide to help you change the app name:		
+		</p>
+        <ol>
+        <li>Open the Flutter project in your preferred integrated development environment (IDE) or code editor.</li>
+        <li>Locate the <strong>pubspec.yaml</strong> file in the root directory of your Flutter project.</li>
+        <li>Open the <strong>pubspec.yaml</strong>  file and find the <strong>name </strong> field. By default, it should be something like <strong>name: your_app_name</strong>.</li>
+        <li>Change the value of the <strong>name </strong> field to your desired app name. Make sure to follow the naming conventions for Flutter projects (lowercase letters, underscores instead of spaces, etc.). For example, you can change it to <strong>name: my_flutter_app</strong>.</li>
+		<li>Save the <strong>pubspec.yaml</strong> file.</li>
+		<li>Open the <strong>android</strong> directory in your Flutter project.</li>
+		<li>Locate the <strong>app</strong> directory inside the <strong>android</strong> directory and open it.</li>
+		<li>Inside the <strong>app</strong> directory, find the <strong>build.gradle</strong> file (usually located at <strong>android/app/build.gradle</strong>).</li>
+		<li>Open the <strong>build.gradle</strong> file and locate the <strong>defaultConfig</strong> section.</li>
+		<li>In the <strong>defaultConfig</strong> section, find the <strong>applicationId<strong> field. The value of this field represents the unique identifier of your app.</li>
+		<li>Change the value of the <strong>applicationId<strong> field to match your desired app package name. The package name should typically follow the reverse domain name notation. For example, if your domain is <strong>example.com</strong>, you can use <strong>applicationId: com.example.myflutterapp</strong>.</li>
+		<li>Save the <strong>build.gradle</strong> file.</li>
+		<li>Now, you need to update the app name in the iOS configuration.</li>
+		<li>Open the <strong>ios</strong> directory in your Flutter project.</li>
+		<li>Inside the <strong>ios</strong> directory, find the <strong>Runner</strong> directory and open it.</li>
+		<li>Locate the <strong>Info.plist</strong> file (usually located at <strong>ios/Runner/Info.plist</strong>).</li>
+		<li>Open the <strong>Info.plist<strong> file and find the <strong><key>CFBundleName</key></strong> section.</li>
+		<li>Change the value of the <strong><string></strong> tag below <strong><key>CFBundleName</key></strong> to your desired app name. For example, <strong><string>My Flutter App</string></strong>.</li>
+		<li>Save the <strong>Info.plist</strong> file.</li>
+		</ol> 
+		<p><strong>Note :</strong>After following these steps, the name of your Flutter app should be updated. Remember to clean and rebuild your project to ensure the changes take effect.</p>
+		</section>	  
+			  
+<section id = "change-logo">
+<h3><strong>6).<u>Change Application Logo</u></strong></h3>
+		<p>Change the launcher icon in <code>Replace the default app icons:<br>
+
+<strong> -> </strong>For Android, navigate to the <strong>android/app/src/main/res</strong> directory in your Flutter project. Replace the icons in the mipmap directories with your custom icons, following the size-specific folders (e.g., mipmap-mdpi, mipmap-hdpi, etc.).<br>
+<strong> -> </strong>For iOS, navigate to the <strong> ios/Runner/Assets.xcassets/AppIcon</strong> appiconset directory in your Flutter project. Replace the default icons with your custom icons. Make sure to match the size and format requirements for each icon.</code> </p>
+        <img src="images/change-logo.png" id="change-img-logo">
+		
+        <p><strong>Note:</strong> You need the 512x512 px size for publishing to Google Play.</p> </section>
+			   	   
+
+
+        
+<section id = "change-packae-name">
+ <h3><strong>7).<u>Changing package name</u></strong></h3>
+	<p>To change the package name of a Flutter application, you need to update it in several places within your project. Follow these steps to change the package name:</p>
+        <ol>
+            <li>Rename the package folder: Open the root directory of your Flutter project and navigate to the lib folder. Rename the package folder to the desired new package name.</li>
+			<li>Update the package name in the pubspec.yaml file: Open the pubspec.yaml file located in the root directory of your project. Update the name field with the new package name.</li>
+			<li>Update the Android package name:</li>
+			<ul>
+				<li>• Open the AndroidManifest.xml file located at android/app/src/main/AndroidManifest.xml.<li>
+				<li>• Change the package attribute of the <manifest> tag to the new package name.</li>
+				</ul>
+            <li>Update the iOS bundle identifier:</li>
+			<ul>
+				<li>• Open the Info.plist file located at ios/Runner/Info.plist.<li>
+				<li>• Change the value of the CFBundleIdentifier key to the new package name.</li>
+				</ul>
+            <li>Update import statements and references:</li>
+			<ul>
+				<li>• In your Dart code files, update any import statements that reference the old package name to import the new package name.<li>
+				<li>• Replace any references to the old package name within your code with the new package name.</li>
+				</ul>
+			<li>Clean and rebuild the project: Run the following command in the root directory of your project to clean and rebuild your Flutter project:</li>
+			<ul>
+				<li>• flutter clean<li>
+				<li>• flutter pub get</li>
+				<li>• flutter run</li>
+				</ul>
+			
+        </ol> 
+		<p>After following these steps, your Flutter application should have the updated package name throughout the project. Make sure to update any dependencies or configurations that reference the old package name as well.</p>
+		</section>
+		
+		<section id="relece_build">
+			<h3><strong>8).<u>Sign your release build</u></strong></h3>
+			<p>To sign a release build for CrossFit, you can follow these steps:
+			<br>
+			<strong>Step 1: Generate a keystore file</strong>
+			<li>Right-click on the "android" directory and select "Flutter" -> "Open Android module in Android Studio"</li>
+			<li>In the Generate Signed Bundle or APK dialog, select Android App Bundle or APK and click Next.</li>
+			<li>Below the field for Key store path, click Create new.</li>
+			<li>On the New Key Store window, provide the following information for your keystore and key, as shown in figure 2.<br>
+			<img alt="" src="images/application/key-store.png" height = "400" width = "400"></li>
+			<p>•  Keystore
+			<li><strong>Key store path:</strong> Select the location where your keystore should be created. Also, a file name should be added to the end of the location path with the .jks extension.</li></p>
+			<li><strong>Password:</strong> Create and confirm a secure password for your keystore.</li>
+		</p>
+		 <p>•  Key
+		<li><strong>Alias:</strong> Enter an identifying name for your key.</li>
+		<li><strong>Password:</strong> Create and confirm a secure password for your key. This should be the same as your keystore password.</li>
+		<li><strong>Validity (yeas):</strong> Set the length of time in years that your key will be valid. Your key should be valid for at least 25 years, so you can sign app updates with the same key through the lifespan of your app.</li>
+		<li>Certificate: Enter some information about yourself for your certificate. This information is not displayed in your app, but is included in your certificate as part of the APK.</li>
+		</p>
+		<li>Once you complete the form, click <strong>OK</strong>.</li>
+		<img alt="" src="images/application/crossFit-jks.png" height = "400" width = "750"></li>
+		<li>Now Replace <strong>crossfit.jks</strong> File and Open <strong>key.properties</strong> File And Change your <strong>.jks</strong> file Detail Like (storePassword, keyPassword, keyAlias, storeFile)</li>
+		<li>Now you can follow these steps and Generate Your Release Apk</li>
+		<img alt="" src="images/application/apk.png" height = "200" width = "500"></li>
+		<p>Click on "Build" → then click on "Flutter" → and finally click on "Build APK".<br>
+		<strong>gym_trainer_app\build\app\outputs\apk\release</strong>This space will appear after the build is complete.</p>
+	</section>	
+	
+		
+		<section id="app_pages">
+			<h3><strong>9).<u>CrossFit App Pages</u></strong></h3>
+			</section>
+			<section id="fronted-login">
+			
+			<strong><h4>1). Login Page:</h4></strong>
+			  <p> You will see this login page.You can now login as admin username and password.</p>         
+			   
+				<img class="image-container" alt="" src="images/application/login_main.png" height = "400" width = "200">           
+			   <p>All users can login from this login page. </p>	 	
+		</section>
+	
+<section id = "admin_view"> <strong><h4>2). Admin View</h4></strong>
+<strong> Login Admin ID And Password For Demo</strong><p> <strong>Email :</strong>admin@gmail.com<br><strong>Password :</strong>admin123</p>
+	<img class="image-container" alt="" src="images/application/admin-view.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="images/application/admin-drawer.png" height = "400" width = "200">
+	<h5>Change Admin Email And PassWord</h5>
+	<li>Open the app and navigate to the Drawer Menu.</li>
+	<li>Select the "Profile" option from the menu to open the profile screen.</li>
+	<img class="image-container" alt="" src="images/application/change-password.png" height = "400" width = "200">
+	<li>On the top right side of the profile screen, click on the pencil icon.</li>
+	<li>A form will appear where you can enter the new email and password.</li>
+	<li>Input the desired new email and password in the respective fields.</li>
+	<li>After making the necessary changes, click on the "Save" button to save the updated information.</li>
+		</section>
+			
+			<section id = "trainer_view"> <strong><h4>3). Trainer View</h4></strong>
+			<strong> Login Trainer ID And Password For Demo</strong><p> <strong>Email :</strong>trainer@gmail.com<br><strong>Password :</strong>trainer</p>
+		<img class="image-container" alt="" src="images/application/trainer-dashbord.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+		<img class="image-container" alt="" src="images/application/trainer-drawer.png" height = "400" width = "200">
+		
+			</section>
+			
+			<section id = "member_view"> <strong><h4>4). Member View</h4></strong>
+			<strong> Login Membre ID And Password For Demo</strong><p> <strong>Email :</strong>member@gmail.com<br><strong>Password :</strong>member</p>
+		<img class="image-container" alt="" src="images/application/membe-dashbord.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+		<img class="image-container" alt="" src="images/application/member-drawer.png" height = "400" width = "200">
+		
+			</section>
+			
+
+                    <!-- start-footer-->
+          <div id="footer"> © 2023 Mojoomla All Rights Reserved. </div>
+          <!-- end-footer -->
+        </section>
+		
+      </div>
+      <!-- end-side-content -->
+    </div>
+    <!-- start-footer-->
+    <div id="footer-sm"> © 2017 Mojoomla All Rights Reserved. </div>
+    <!-- end-footer -->
+    <div class="white-space"></div>
+  </section>
+  <!-- container -->
+  <!-- end-footer -->
+  <span id="scroll-top"><a class="scrollup"></a></span> </div>
+<!-- end-wrap -->
+<!-- End Document
+         ================================================== -->
+<script src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/doubletaptogo.js" ></script>
+<script type="text/javascript" src="js/cube-custom.js" ></script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
