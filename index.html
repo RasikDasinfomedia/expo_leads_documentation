@@ -114,7 +114,7 @@ rel="stylesheet" type="text/css">
       <div class="col-md-8">
         <section  id="Introduction">
           <div id="header" class="row">
-            <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo" height="110" width="100"></a> </div>
+            <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.jpg"  id="img-logo" alt="logo" height="110" width="100"></a> </div>
             <div class="col-md-8 col-md-offset-1 desc">
               <h4 class="slight">CrossFit App <sub><small></small></sub></h4>
               <h5 class="slight"><small> Documented by Mojoomla</a> - at June 01 2023</small></h5>
@@ -202,8 +202,16 @@ rel="stylesheet" type="text/css">
 				   <li>Follow on the top step and enable bellow methods</li>
 				   <img alt="" src="images/application/signMethod.png">1
 				   
+				      <p><strong>Step 4: Add your app Indexes</strong>
+				   <li>Click on "Firestore Database" → then click on "Indexes tab" → and finally click on "Add Index" Thne Fill Detail Like This Image.</li>
+				   <li>After configuring the index, click on the "Create Index" button to add it to your Firestore database.</li>
+				   <li>Firestore will process the index creation request, which may take some time depending on the size of your database. You can check the status of the index creation on the "Indexes" page. Once the index status changes to "Enabled," the index is ready to use.</li>
+				   <li>Add all the Indexes below by following the above steps</li>
+				   <img alt="" src="images/application/indexList.png">
+				   </p>
 				   
-				   <p><strong>Step 4: Change your Firease Database rules</strong>
+				   
+				   <p><strong>Step 5: Change your Firease Database rules</strong>
 				    <li>Click on the "Firebase Database" tab in the left sidebar to navigate to the Firebase Database section.</li>
 				   <li>In the Database section, you will see a "Rules" tab. Click on it to access the database rules editor.</li>
 				   <li>The rules editor allows you to define the security rules for your database. You can write rules using the Firebase Database Security Rules language.</li>
@@ -222,7 +230,7 @@ rel="stylesheet" type="text/css">
 				   <li>Firebase will validate the new rules for any syntax errors or potential security issues. If there are any errors, Firebase will provide feedback on the errors and suggestions to fix them.</li>
 				   <li>If the rules are successfully validated, Firebase will apply the new rules to your database.</li>
 				   
-				    <p><strong>Step 5: Change your storage rules</strong>
+				    <p><strong>Step 6: Change your storage rules</strong>
 				   <li>Click on the "Storage" tab in the left sidebar to navigate to the Firebase Database section.</li>
 				   <li>In the Storage section, you will see a "Rules" tab. Click on it to access the Storage rules editor.</li>
 				   <li>The rules editor allows you to define the security rules for your Storage. You can write rules using the Storage Rules language.</li>
@@ -242,7 +250,7 @@ rel="stylesheet" type="text/css">
 				   <li>If the rules are successfully validated, Firebase will apply the new rules to your Storage.</li>
 				   
 				   </p>
-				   <p><strong>Step 6: Add SHA1 and SHA-256 Key in firebase</strong>
+				   <p><strong>Step 7: Add SHA1 and SHA-256 Key in firebase</strong>
 				   <li>Open Terminal.</li>
 				   <li>flutter clean</li>
 					<li>flutter pub get</li>
@@ -258,7 +266,7 @@ rel="stylesheet" type="text/css">
 				   <li>Click on the "Save" button to add the keys to your Firebase project.</li>
 				   </p>
 				   
-				    <p><strong>Step 7: Deploy firebase function</strong>
+				    <p><strong>Step 8: Deploy firebase function</strong>
 					<p>Following bellow steps to genrate google-service-key</p>
 					<li>Go to the Google Cloud Console:<a href="https://console.cloud.google.com/" target="_blank"> https://console.cloud.google.com/</a></li>
 					<li>Click on the project drop-down and select Project.</li>
