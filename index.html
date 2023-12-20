@@ -45,7 +45,7 @@
 <!-- Basic Page Needs
          ================================================== -->
 <meta charset="utf-8">
-<title>CrossFit App - Documentation</title>
+<title>ExpoLeads App - Documentation</title>
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- Mobile Specific Metas	
@@ -78,8 +78,8 @@ rel="stylesheet" type="text/css">
       <div id="header-sm">
         <div class="col-md-3 logo"> <a href="index.html"><img src="images/mojoomla_logo.jpg" width="150" id="img-logo" alt="logo"></a> </div>
         <div class="col-md-8 col-md-offset-1 desc">
-          <h4 class="slight">CrossFit App</h4>
-          <h5 class="slight"><small> Documented by Mojoomla - at June 01 2023</small></h5>
+          <h4 class="slight">ExpoLeads App</h4>
+          <h5 class="slight"><small> Documented by Mojoomla - at December 20 2023</small></h5>
         </div>
       </div>
       <div class="col-md-4">
@@ -106,7 +106,7 @@ rel="stylesheet" type="text/css">
 
 			<li><a href="#faq">FAQ</a></li>
 			<li><a href="#logout">Logout</a></li>
-			<li><a href="https://play.google.com/store/apps/details?id=crossfit.personaltrainer.gymtrainer.fitness" target="_blank">Download App</a></li>
+			<li><a href="https://play.google.com/store/apps/details?id=expoleads.scan.exhibitor.data&hl=en&gl=US" target="_blank">Download App</a></li>
 			</ul>
 
         </aside>
@@ -116,8 +116,8 @@ rel="stylesheet" type="text/css">
           <div id="header" class="row">
             <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.jpg"  id="img-logo" alt="logo" height="110" width="100"></a> </div>
             <div class="col-md-8 col-md-offset-1 desc">
-              <h4 class="slight">CrossFit App <sub><small></small></sub></h4>
-              <h5 class="slight"><small> Documented by Mojoomla</a> - at June 01 2023</small></h5>
+              <h4 class="slight">ExpoLeads App <sub><small></small></sub></h4>
+              <h5 class="slight"><small> Documented by Mojoomla</a> - at December 20 2023</small></h5>
             </div>
           </div>
           <hr class="vertical-space2">
@@ -143,7 +143,7 @@ rel="stylesheet" type="text/css">
                </ol>
 			   
 			  <h5><strong>B. <u>Installing the latest version of Android Studio.</u></strong></h5>
-             <code>CrossFit App is built with the latest Android studio <strong>Hedgehog | 2023.1.1</strong></br><strong> NOTE:</strong> There are several other tools to build and run android projects.</code>
+             <code>ExpoLeads App is built with the latest Android studio <strong>Hedgehog | 2023.1.1</strong></br><strong> NOTE:</strong> There are several other tools to build and run android projects.</code>
 				           
 		   <ol>
 				<li>	Go to the <a href = "http://developer.android.com/sdk/index.html" target="_blank"> Android Developer Page</a> </li>
@@ -156,7 +156,7 @@ rel="stylesheet" type="text/css">
 			<h5><strong>C. <u>Update the IDE and SDK Tools</u></strong></h5>
 			<ol>
 				<li>The Android SDK Manager provides the SDK tools, platforms, and other components you need to develop your apps.</li>
-				<li>CrossFit App minimum required SDK Platform API level <Strong>21</strong></li>
+				<li>ExpoLeads App minimum required SDK Platform API level <Strong>21</strong></li>
 				<li>Install SDK Platform API levels.</li>
 				<li>Open the Preferences window by clicking File -> Settings.</li>
 				<li>In the left panel, click Appearance & Behavior -> System Settings -> Android SDK.</li>
@@ -172,7 +172,7 @@ rel="stylesheet" type="text/css">
 			
 			<section id="set-up-firebase-project">
 				   <h3><strong>3).<u>Set Up Firebase</u></strong></h3>
-				   <p>To set up Firebase Database for a CrossFit app, follow these step-by-step instructions:</p>
+				   <p>To set up Firebase Database for a ExpoLeads app, follow these step-by-step instructions:</p>
 				   <p>
 				   <strong>Step 1: Create a Firebase project</strong>
 				   <li>Go to the Firebase console <strong><a href="https://console.firebase.google.com/" target="_blank">(https://console.firebase.google.com/)</a></strong> and sign in with your Google account.</li>
@@ -254,11 +254,11 @@ rel="stylesheet" type="text/css">
 				   <li>Open Terminal.</li>
 				   <li>flutter clean</li>
 					<li>flutter pub get</li>
-				   <li>Go to android folder.("D:\user\gym_trainer_app\android\")</li>
+				   <li>Go to android folder.("D:\user\expoleads_crm\android\")</li>
 				   <li>Then Run this command <strong>./gradlew signingReport</strong></li>
 				   <li>Then Copy the SHA1 and SHA-256 key and paste it to the address below</li>
 				   <li>Click on the gear icon in the upper-left corner to access project settings.</li>
-				   <li>In the Project Settings page, scroll down to the section titled "CrossFit" and find the Android app for which you want to add the keys. If you haven't added an Android app yet, click on the "Add app" button and follow the instructions to register your app.</li>
+				   <li>In the Project Settings page, scroll down to the section titled "ExpoLeads" and find the Android app for which you want to add the keys. If you haven't added an Android app yet, click on the "Add app" button and follow the instructions to register your app.</li>
 				   <li>Once you have selected the Android app, you'll see the app's configuration details.</li>
 				   <li>Look for the section titled "SHA certificate fingerprints" and click on the "Add fingerprint" button.</li>
 				   <li>In the dialog that appears, enter the SHA-1 key in the provided field.</li>
@@ -318,7 +318,7 @@ rel="stylesheet" type="text/css">
 		<li>Inside the <strong>ios</strong> directory, find the <strong>Runner</strong> directory and open it.</li>
 		<li>Locate the <strong>Info.plist</strong> file (usually located at <strong>ios/Runner/Info.plist</strong>).</li>
 		<li>Open the <strong>Info.plist<strong> file and find the <strong><key>CFBundleDisplayName</key></strong> section.</li>
-		<li>Change the value of the <strong><string></strong> tag below <strong><key>CFBundleDisplayName</key></strong> to your desired app name. For example, <strong><string>CrossFit App</string></strong>.</li>
+		<li>Change the value of the <strong><string></strong> tag below <strong><key>CFBundleDisplayName</key></strong> to your desired app name. For example, <strong><string>ExpoLeads App</string></strong>.</li>
 		<li>Save the <strong>Info.plist</strong> file.</li>
 		</ol> 
 		<p><strong>Note :</strong>After following these steps, the name of your Flutter app should be updated. Remember to clean and rebuild your project to ensure the changes take effect.</p>
@@ -353,7 +353,7 @@ rel="stylesheet" type="text/css">
 			<ul>
 				<li>• Open the Info.plist file located at ios/Runner/Info.plist.<li>
 				<li>• Change the value of the CFBundleIdentifier key to the new package name.Open the <strong>Info.plist</strong> file and find the <strong><key>CFBundleName</key></strong> section.
-		Change the value of the <strong><string></strong> tag below <strong><key>CFBundleName</key></strong> to your desired app bundal name. For example, <strong>"<string>crossfit.personaltrainer.gymtrainer.fitness</string>"</strong>.</li>
+		Change the value of the <strong><string></strong> tag below <strong><key>CFBundleName</key></strong> to your desired app bundal name. For example, <strong>"<string>expoleads.scan.exhibitor.data</string>"</strong>.</li>
 				</ul>
             <li>Update import statements and references:</li>
 			<ul>
@@ -373,7 +373,7 @@ rel="stylesheet" type="text/css">
 		
 		<section id="relece_build">
 			<h3><strong>7).<u>Sign your release build</u></strong></h3>
-			<p>To sign a release build for CrossFit, you can follow these steps:
+			<p>To sign a release build for ExpoLeads, you can follow these steps:
 			<br>
 			<strong>Step 1: Generate a keystore file</strong>
 			<li>Right-click on the "android" directory and select "Flutter" -> "Open Android module in Android Studio"</li>
@@ -393,16 +393,67 @@ rel="stylesheet" type="text/css">
 		</p>
 		<li>Once you complete the form, click <strong>OK</strong>.</li>
 		<img alt="" src="images/application/expoleads-jks.png" height = "400" width = "750"></li>
-		<li>Now Replace <strong>crossfit.jks</strong> File and Open <strong>key.properties</strong> File And Change your <strong>.jks</strong> file Detail Like (storePassword, keyPassword, keyAlias, storeFile)</li>
+		<li>Now Replace <strong>expoleads.jks</strong> File and Open <strong>key.properties</strong> File And Change your <strong>.jks</strong> file Detail Like (storePassword, keyPassword, keyAlias, storeFile)</li>
 		<li>Now you can follow these steps and Generate Your Release Apk</li>
 		<img alt="" src="images/application/apk.png" height = "200" width = "500"></li>
 		<p>Click on "Build" → then click on "Flutter" → and finally click on "Build APK".<br>
-		<strong>gym_trainer_app\build\app\outputs\apk\release</strong>This space will appear after the build is complete.</p>
+		<strong>expoleads_crm\build\app\outputs\apk\release</strong>This space will appear after the build is complete.</p>
+	</section>	
+	
+	
+	<section id="relece_build">
+			<h3><strong>8).<u>Release App in PlayStore</u></strong></h3>
+			<p>To sign a release app for ExpoLeads, you can follow these steps:
+			<br>
+			
+			<li>Please be aware that there is a registration fee of at least $25 associated with the process.</li>
+			<li>Click on the Create app button in the All apps section. Enter the app details in the "Create app" form.</li>
+			<img alt="" src="images/application/app_release1.png" height = "400" width = "400"></li>
+			<li>After creating the app, we have to go through multiple tasks to release the application.</li>
+			<img alt="" src="images/application/app_release2.png" height = "400" width = "400"></li>
+			<li>However, all these steps will be self-explanatory.<br>
+			<li>At each step, you'll be prompted for information about your application, advertisements, privacy policy, and more.<br>
+			<li>It's important to note that you can proceed to publish only after completing these steps.<br>
+			<li>Make sure to mention everything clearly. Especially the questions about data collection. Because, at any time if Google found that your prescribed information is wrong, your app will not be published or will be taken out, if it's published.<br>
+			<li>After completing these steps, we have to send the app for review. Our app will be published once the review is completed from Google Play team.<br>
+			<li>It's important to note that there's a higher chance of the app getting rejected if it has security or advertising-related issues.<br>
+			<li>Therefore, make sure to thoroughly review your app to ensure that it doesn't have any potential problems in data collection. This will contribute to a smoother and more successful app release experience.<br>
+			</p>
+	</section>	
+	
+	<section id="relece_build">
+			<h3><strong>9).<u>Release App in AppStore</u></strong></h3>
+			<p>To sign a release app for ExpoLeads, you can follow these steps:
+			<br>
+			
+			<li>Before you can build and release your app on the App Store, you need to create a record for it using App Store Connect. But first, you need to register a unique bundle ID for your app. This can be done by logging into your Apple Developer account and following these steps:</li>
+			<li>Open the App IDs page and select + to create a new Bundle ID.</li>
+			
+			<li>Fill out the needed information: App Name and Explicit App ID. If your app needs specific services, select them then select Continue.</li>
+		
+			<li>Review the details and select Register to finish.<br>
+			<li>Now that we have a unique bundle ID, it’s time to create a record for your app on the App Store Connect.<br>
+			<li>It's important to note that you can proceed to publish only after completing these steps.<br>
+			<li>Log in to the App Store Connect and select My Apps then select + then New App.<br>
+			<li>Fill in your app details and make sure iOS is selected, then select Create. From the sidebar, select App Information. In the "General Information" section, select the Bundle ID that you registered above.<br>
+			<li>You’ve set everything up from Apple’s side, and next you'll adjust your Xcode project’s settings to prepare your app for release. Go ahead and fire up Xcode.<br>
+			<li>Open Runner.xcworkspace that is inside your app’s iOS folder. From the Xcode project navigator, select the Runner project. Then, select the Runner target in the main view sidebar.<br>
+			<li>Go to the General tab. In the Identity section, fill out the information and make sure the Bundle Identifier is the one registered on App Store Connect. In the Signing & Capabilities section, make sure Automatically manage signing is checked and select your team.<br>
+			<li>Go to the Deployment section of the Build Settings tab and set iOS Deployment Target to the minimum iOS version you support. Fill out the rest of the information as needed. Next, you'll update your app’s icon and launch image by selecting Assets.xcassets in the Runner folder from Xcode’s project navigator.<br>
+			<li>Open Runner.xcworkspace that is inside your app’s iOS folder. From the Xcode project navigator, select the Runner project. Then, select the Runner target in the main view sidebar.<br>
+			<li>At this point, all the settings have been updated for release and there is a placeholder ready on App Store Connect, which means you can build and release.<br>
+			<li>From the command line, run flutter build ipa to generate an Xcode build archive. You can also append --build-name and --build-number to override the default version and build numbers, respectively. Then go back to Xcode and open the newly created archive from your project's archive directory.<br>
+			<li>Check the information then select Validate to build. Once the archive is successfully validated, select Distribute App.<br>
+			<li>Back on App Store Connect, check the status of your build from the Activities tab. Once it’s ready to release:<br>
+			<li>Go to Pricing and Availability and fill out the required information. From the sidebar, select the status.<br>
+			<li>Select Prepare for Submission and complete all required fields. Select Submit for Review.<br>
+			<li> Your app will now be uploaded to the App Store. Apple will review your app before releasing and keep you updated on the status of your app.<br>
+			</p>
 	</section>	
 	
 		
 		<section id="app_pages">
-			<h3><strong>8).<u>ExpoLeads App Overview</u></strong></h3>
+			<h3><strong>10).<u>ExpoLeads App Overview</u></strong></h3>
 			</section>
 			<section id="fronted-login">
 			
@@ -469,7 +520,7 @@ rel="stylesheet" type="text/css">
 			<li>User can add images in notes and for notes speech to text feature is available for it</li>
 			
 			<section id = "faq">
-			<p> <h3> <strong>9).<u>FAQ</u></strong></h3>
+			<p> <h3> <strong>11).<u>FAQ</u></strong></h3>
 			<li>Open the app and navigate to the Drawer Menu or click on "Get Started!" button in Dashboard Screen.</li>
 			<li>Select the "FAQ" option from the menu to open the FAQ screen.</li>
 			<img class="image-container" alt="" src="images/application/faq-screen.png" height = "400" width = "200">
@@ -478,7 +529,7 @@ rel="stylesheet" type="text/css">
 			</section>
 			
 				<section id = "logout">
-			<p> <h3> <strong>10).<u>Logout</u></strong></h3>
+			<p> <h3> <strong>12).<u>Logout</u></strong></h3>
 			<li>Open the app and navigate to the Drawer Menu or click on "Logout" button in Dashboard Screen.</li>
 			<img class="image-container" alt="" src="images/application/admin-drawer.png" height = "400" width = "200">
 			<img class="image-container" alt="" src="images/application/logout.png" height = "400" width = "200">
