@@ -471,7 +471,7 @@ rel="stylesheet" type="text/css">
 <section id = "admin_view"> <h4><strong>B). Admin</strong></h4>
 <strong> Login Admin Number And OTP For Demo</strong><p> <strong>Phone :</strong> 9876543210<br><strong>OTP :</strong> 123456</p>
 	<img class="image-container" alt="" src="F:\Krupali\ss\home_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
-	<img class="image-container" alt="" src="F:\Krupali\ss\dashboard.png" height = "400" width = "200">
+	<img class="image-container" alt="" src="F:\Krupali\ss\dashboard_framed.png" height = "400" width = "200">
 	
 			<section id = "profile_view"> <h4><strong>C). Profile</strong></h4>
 			<li>Open the app and navigate to the Drawer Menu.</li>
