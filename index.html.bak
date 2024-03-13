@@ -102,7 +102,7 @@ rel="stylesheet" type="text/css">
 			<li><a href="#quick_scan_view">Quick Scan</a></li>
 			<li><a href="#contact_list_view">Contact List</a></li>
 			<li><a href="#contact_detail_view">Contact Detail</a></li>
-			<li><a href="#Export_CSV">Export CSV</a></li>
+			<li><a href="#export_CSV">Export CSV</a></li>
 			<li><a href="#filter">Filter contact List</a></li>
 						</ul></li>
 
@@ -498,7 +498,7 @@ rel="stylesheet" type="text/css">
 			<li>Open the app and navigate to the Drawer Menu.</li>
 			<li>Select the "Contact List" option from the menu or click on the contact card available in the dashboard screen to open the Contact List screen.</li>
 	<img class="image-container" alt="" src="images/application/contact-list-screen.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
-	<img class="image-container" alt="" src="images/application/contactlist_framed.png.png" height = "400" width = "200">
+	<img class="image-container" alt="" src="images/application/contactlist_framed.png" height = "400" width = "200">
 			<li>All contacts are in contact list screen.</li>
 			<li>To make any contact favourite, click on the favourite icon available in the contact card or select the "Add to Favourite" option in option menu from the contact card.</li>
 			<li>Similarly,To make any contact unfavourite, click on the favourite icon available in the contact card or select the "Remove from Favourite" option in option menu from the contact card.</li>
@@ -510,7 +510,7 @@ rel="stylesheet" type="text/css">
 			<li>If user want to add contact manulaly, Click on the menu button available in bottom right side in the contact screen then select the "Add Contact" opotion.</li>
 			<li>User can scan directly from here by clicking the "Scan QR" in option.</li></p> 
 	
-			 <p><section id = "contact_detail_view"> <h4><strong>F). Contact Detail</strong></h4>  
+			 <p><section id = "contact_detail_view"> <h4><strong>F).Contact Detail</strong></h4>  
 			<li>Open the app and navigate to the Drawer Menu.</li>
 			<li>Select the "Contact List" option from the menu to open the Contact List screen then select any of the contact in the list to check the contact details.</li>
 	<img class="image-container" alt="" src="images/application/contact-detail.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
@@ -523,7 +523,7 @@ rel="stylesheet" type="text/css">
 			<li>User can redirect to contact person website if the url is mentioned in contact details.</li>
 			<li>User can add images in notes and for notes speech to text feature is available for it</li>
 			
-			<p><section id = "Export_csv"> <h4><strong>G).Export CSV</strong></h4>  
+			<p><section id = "export_csv"> <h4><strong>G).Export CSV</strong></h4>  
 			<li>Open the app and navigate to the Drawer Menu.</li>
 			<li>Select the contact from contact list and show the export icon on appbar.</li>
 	<img class="image-container" alt="" src="images/application/expo_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
