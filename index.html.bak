@@ -18,7 +18,25 @@
       object-fit: cover; /* Maintains the image's aspect ratio while filling the container */
     }
 	
-
+  table {
+      width: 100%;
+	  border: 2px solid #000 !important;
+    }
+    
+    td {
+		padding-left: 30px;
+		  
+	  vertical-align: middle !important;
+	  border: 1px solid #000 !important;
+	 
+    }
+  
+    th {
+      background-color:  #f2f2f2;
+	  padding: 8px;
+      text-align: center; 
+	  border: 1px solid #000 !important;
+    }
 
 
   </style>
@@ -27,7 +45,7 @@
 <!-- Basic Page Needs
          ================================================== -->
 <meta charset="utf-8">
-<title>CrossFit App - Documentation</title>
+<title>ExpoLeads App - Documentation</title>
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- Mobile Specific Metas	
@@ -60,8 +78,8 @@ rel="stylesheet" type="text/css">
       <div id="header-sm">
         <div class="col-md-3 logo"> <a href="index.html"><img src="images/mojoomla_logo.jpg" width="150" id="img-logo" alt="logo"></a> </div>
         <div class="col-md-8 col-md-offset-1 desc">
-          <h4 class="slight">CrossFit App</h4>
-          <h5 class="slight"><small> Documented by Mojoomla - at June 01 2023</small></h5>
+          <h4 class="slight">ExpoLeads App</h4>
+          <h5 class="slight"><small> Documented by Mojoomla - at December 20 2023</small></h5>
         </div>
       </div>
       <div class="col-md-4">
@@ -73,34 +91,39 @@ rel="stylesheet" type="text/css">
 			  			  <li><a href="#flutter-version">Flutter Version</a></li>
 
 			  <li><a href="#set-up-firebase-project">set up Firebase</a></li>
-			  <li><a href="#set-up-email-notification">set up Email Notification</a></li>
 			  			   <li><a href="#change-app-name">Change App Name</a></li>
 			   <li><a href="#change-logo">Change App Logo</a></li>
 			   <li><a href="#change-packae-name">Change Package Name</a></li>
 			   			<li><a href="#relece_build">Create Release Build</a></li>
-				  <li><a href="#app_pages">CrossFit App Pages</a>
-				  <ul><li><a href="#fronted-login">Login Page</a></li>
-			<li><a href="#admin_view">Admin View</a></li>
-			<li><a href="#trainer_view">Trainer View</a></li>
-			<li><a href="#member_view">Member View</a></li>
+				  <li><a href="#app_pages">ExpoLeads App Overview</a>
+				  <ul><li><a href="#fronted-login">Login Screen</a></li>
+			<li><a href="#admin_view">Admin</a></li>
+			<li><a href="#profile_view">Profile</a></li>
+			<li><a href="#quick_scan_view">Quick Scan</a></li>
+			<li><a href="#contact_list_view">Contact List</a></li>
+			<li><a href="#contact_detail_view">Contact Detail</a></li>
+			<li><a href="#Export_CSV">Export CSV</a></li>
+			<li><a href="#filter">Filter contact List</a></li>
 						</ul></li>
-			<li><a href="https://play.google.com/store/apps/details?id=crossfit.personaltrainer.gymtrainer.fitness" target="_blank">Download App</a></li>
 
-			        </ul>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#logout">Logout</a></li>
+			<li><a href="https://play.google.com/store/apps/details?id=expoleads.scan.exhibitor.data&hl=en&gl=US" target="_blank">Download App</a></li>
+			</ul>
 
         </aside>
       </div>
       <div class="col-md-8">
         <section  id="Introduction">
           <div id="header" class="row">
-            <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo" height="110" width="100"></a> </div>
+            <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.jpg"  id="img-logo" alt="logo" height="110" width="100"></a> </div>
             <div class="col-md-8 col-md-offset-1 desc">
-              <h4 class="slight">CrossFit App <sub><small></small></sub></h4>
-              <h5 class="slight"><small> Documented by Mojoomla</a> - at June 01 2023</small></h5>
+              <h4 class="slight">ExpoLeads App <sub><small></small></sub></h4>
+              <h5 class="slight"><small> Documented by Mojoomla</a> - at December 20 2023</small></h5>
             </div>
           </div>
           <hr class="vertical-space2">
-          <p align="center"><img src="images/preview-image1.png"></p>
+          <p align="center"><img src="images/preview-images.jpg"></p>
          
 
 		
@@ -122,7 +145,7 @@ rel="stylesheet" type="text/css">
                </ol>
 			   
 			  <h5><strong>B. <u>Installing the latest version of Android Studio.</u></strong></h5>
-             <code>CrossFit App is built with the latest Android studio <strong>Hedgehog | 2023.1.1</strong></br><strong> NOTE:</strong> There are several other tools to build and run android projects.</code>
+             <code>ExpoLeads App is built with the latest Android studio <strong>Hedgehog | 2023.1.1</strong></br><strong> NOTE:</strong> There are several other tools to build and run android projects.</code>
 				           
 		   <ol>
 				<li>	Go to the <a href = "http://developer.android.com/sdk/index.html" target="_blank"> Android Developer Page</a> </li>
@@ -135,7 +158,7 @@ rel="stylesheet" type="text/css">
 			<h5><strong>C. <u>Update the IDE and SDK Tools</u></strong></h5>
 			<ol>
 				<li>The Android SDK Manager provides the SDK tools, platforms, and other components you need to develop your apps.</li>
-				<li>CrossFit App minimum required SDK Platform API level <Strong>21</strong></li>
+				<li>ExpoLeads App minimum required SDK Platform API level <Strong>21</strong></li>
 				<li>Install SDK Platform API levels.</li>
 				<li>Open the Preferences window by clicking File -> Settings.</li>
 				<li>In the left panel, click Appearance & Behavior -> System Settings -> Android SDK.</li>
@@ -151,7 +174,7 @@ rel="stylesheet" type="text/css">
 			
 			<section id="set-up-firebase-project">
 				   <h3><strong>3).<u>Set Up Firebase</u></strong></h3>
-				   <p>To set up Firebase Database for a CrossFit app, follow these step-by-step instructions:</p>
+				   <p>To set up Firebase Database for a ExpoLeads app, follow these step-by-step instructions:</p>
 				   <p>
 				   <strong>Step 1: Create a Firebase project</strong>
 				   <li>Go to the Firebase console <strong><a href="https://console.firebase.google.com/" target="_blank">(https://console.firebase.google.com/)</a></strong> and sign in with your Google account.</li>
@@ -161,82 +184,150 @@ rel="stylesheet" type="text/css">
 				   </p>
 	
 				   <p><strong>Step 2: Connect your app to Firebase</strong>
+				   <p><u>For Android :</u></P>
 				   <li>In the Firebase console, go to your project.</li>
 				   <li>Click on the "Add app" button to add your Flutter app.</li>
 				   <li>Follow the instructions to register your app, providing the app package name (usually "com.example.your_app") and app nickname.</li>
 				   <li>Download the <strong>google-services.json</strong> file and place it in the <strong>android/app</strong> directory of your Flutter project.</li>
+				   <br>
+				   <p><u>For IOS :</u></P>
+				   <li>In the Firebase Console, go to your project settings (the gear icon) and click on "Project settings."</li>
+				   <li>Under the "Your apps" section, click on the iOS icon to add an iOS app.</li>
+				   <li>Enter your iOS bundle identifier. This can be found in your Flutter project's <strong>Info.plist</strong> file under the <strong>CFBundleIdentifier</strong> key.</li>
+				   <li>Download the <strong>GoogleService-Info.plist</strong> file and place it in the <strong>ios/Runner</strong> directory of your Flutter project.</li>
 				   </p>
 				   
-				   <p><strong>Step 3: Add your app Indexes</strong>
+				   <p><strong>Step 3: Enable Sign-in-Method</strong>
+				   <li>Click on "Authentication" from the left sidebar.</li>
+				   <li>Click on the "Sign-in method" tab.</li>
+				   <li>In the "Sign-in method" tab, you'll find a list of sign-in providers. Enable the desired sign-in method(s) you want to use, such as Email/Password, Google, Facebook, etc.</li>
+				   <li>Follow on the top step and enable bellow methods</li>
+				   <img alt="" src="images/application/signMethod.png">1
+				   
+				      <p><strong>Step 4: Add your app Indexes</strong>
 				   <li>Click on "Firestore Database" → then click on "Indexes tab" → and finally click on "Add Index" Thne Fill Detail Like This Image.</li>
-				   <img alt="" src="images/application/addIndexing.png"></br>
 				   <li>After configuring the index, click on the "Create Index" button to add it to your Firestore database.</li>
 				   <li>Firestore will process the index creation request, which may take some time depending on the size of your database. You can check the status of the index creation on the "Indexes" page. Once the index status changes to "Enabled," the index is ready to use.</li>
 				   <li>Add all the Indexes below by following the above steps</li>
 				   <img alt="" src="images/application/indexList.png">
 				   </p>
 				   
-		</section>
-		<section id="set-up-email-notification">
-				   <h3><strong>4).<u>Set Up Email Notification</u></strong></h3>
-				   <p>To set up Email Notification for a CrossFit app, follow these step-by-step instructions:</p>
-				   <p>
-				   <strong>Step 1: Create a Sendinblue account</strong>
-				   <li>Go to the Sendinblue website using your preferred web browser.Go to the Sendinblue website using your preferred web browser. The website URL is <strong><a href="https://www.sendinblue.com/" target="_blank">(https://www.sendinblue.com/)</a></strong>.</li>
-				   <li>Click on "Sign Up" or "Get Started": On the homepage, you'll usually find a prominent "Sign Up" or "Get Started" button. Click on it to begin the account creation process.</li>
-				   <li>Select your account type: Sendinblue offers different types of accounts based on your needs. Choose the appropriate account type based on the features and functionalities you require. The options usually include "Free," "Lite," "Premium," and "Enterprise."</li>
-				   <li>Fill in the required information: You'll be presented with a form where you need to provide your details. Typically, the form includes fields such as your name, email address, and a password. Fill in the necessary information accurately.</li>
-				   <li>Verify your email address: After completing the form, you'll receive an email from Sendinblue to verify your email address. Click on the verification link provided in the email to confirm your account.</li>
-				   <li>Set up your account: Once your email address is verified, you'll be directed to the Sendinblue dashboard or a setup wizard. Follow the on-screen instructions to configure your account settings, including your organization's name, contact details, and any additional information required.</li>
-				   <li>Explore Sendinblue features: Once your account setup is complete, you can start exploring the various features and functionalities offered by Sendinblue. These may include email marketing, SMS campaigns, automation workflows, contact management, and more.</li>
+				   
+				   <p><strong>Step 5: Change your Firease Database rules</strong>
+				    <li>Click on the "Firebase Database" tab in the left sidebar to navigate to the Firebase Database section.</li>
+				   <li>In the Database section, you will see a "Rules" tab. Click on it to access the database rules editor.</li>
+				   <li>The rules editor allows you to define the security rules for your database. You can write rules using the Firebase Database Security Rules language.</li>
+				   <li>Copy the below Rules then paste this Rules</li>
+				   <p>&nbsp;&nbsp;&nbsp rules_version = '2';<br>
+						&nbsp;&nbsp;&nbsp service cloud.firestore {<br>
+						&nbsp;&nbsp;&nbsp match /databases/{database}/documents {<br>
+						&nbsp;&nbsp;&nbsp match /{document=**} {<br>
+						&nbsp;&nbsp;&nbsp allow read, write: if request.auth != null;<br>
+						&nbsp;&nbsp;&nbsp allow read: if request.auth == null;<br>
+						&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp }<br>
+						&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp	}<br>
+						&nbsp;&nbsp;&nbsp }<br>
+						</p>
+				   <li>Once you have made the necessary changes to the rules, click on the "Publish" button to save and apply the new rules to your database.</li>
+				   <li>Firebase will validate the new rules for any syntax errors or potential security issues. If there are any errors, Firebase will provide feedback on the errors and suggestions to fix them.</li>
+				   <li>If the rules are successfully validated, Firebase will apply the new rules to your database.</li>
+				   
+				    <p><strong>Step 6: Change your storage rules</strong>
+				   <li>Click on the "Storage" tab in the left sidebar to navigate to the Firebase Database section.</li>
+				   <li>In the Storage section, you will see a "Rules" tab. Click on it to access the Storage rules editor.</li>
+				   <li>The rules editor allows you to define the security rules for your Storage. You can write rules using the Storage Rules language.</li>
+				   <li>Copy the below Rules then paste this Rules</li>
+				   <p>&nbsp;&nbsp;&nbsp rules_version = '2';<br>
+						&nbsp;&nbsp;&nbsp service firebase.storage {<br>
+						&nbsp;&nbsp;&nbsp match /b/{bucket}/o {<br>
+						&nbsp;&nbsp;&nbsp match /{allPaths=**} {<br>
+						&nbsp;&nbsp;&nbsp  allow read, write: if request.auth != null;<br>
+						&nbsp;&nbsp;&nbsp allow read, write: if request.auth == null;<br>
+						&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp }<br>
+						&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp	}<br>
+						&nbsp;&nbsp;&nbsp }<br>
+						</p>
+				   <li>Once you have made the necessary changes to the rules, click on the "Publish" button to save and apply the new rules to your database.</li>
+				   <li>Firebase will validate the new rules for any syntax errors or potential security issues. If there are any errors, Firebase will provide feedback on the errors and suggestions to fix them.</li>
+				   <li>If the rules are successfully validated, Firebase will apply the new rules to your Storage.</li>
+				   
 				   </p>
-	
-				   <p><strong>Step 2: Connect your app with SMTP & API</strong>
-				   <li>Go Sendinblue dashboard.</li></br>
-				   <img alt="" src="images/application/sendinblue.png"></br></br>
-				   <li>In the SMTP section, you'll find your SMTP credentials. Make a note of the SMTP server, port number, username, and password. You'll need these details to configure your email notifications.</li></br>
-				   <img alt="" src="images/application/smtp-api.png"></br>
-				   <li>Now, you'll need to integrate Sendinblue with your application or platform. Sendinblue provides various integration options, such as SMTP, API, plugins, and libraries. Choose the integration method that suits your needs.</li>
-				   <li>Click Generate a new SMTP key. Add the name of your SMTP key and Generate then copy this smtp key.</li></br>
-				   <img alt="" src="images/application/change-smtp-details.png"></br></br>
-				   <li>Changes the value of sendinblueEmailFrom, sendinblueEmailName, sendinblueSMTPServerPort, sendinblueSMTPPassword.</li></br>
-				   <li>SendinblueSMTPPassword is your SMTP Master PassWord.</li></br>
-
+				   <p><strong>Step 7: Add SHA1 and SHA-256 Key in firebase</strong>
+				   <li>Open Terminal.</li>
+				   <li>flutter clean</li>
+					<li>flutter pub get</li>
+				   <li>Go to android folder.("D:\user\expoleads_crm\android\")</li>
+				   <li>Then Run this command <strong>./gradlew signingReport</strong></li>
+				   <li>Then Copy the SHA1 and SHA-256 key and paste it to the address below</li>
+				   <li>Click on the gear icon in the upper-left corner to access project settings.</li>
+				   <li>In the Project Settings page, scroll down to the section titled "ExpoLeads" and find the Android app for which you want to add the keys. If you haven't added an Android app yet, click on the "Add app" button and follow the instructions to register your app.</li>
+				   <li>Once you have selected the Android app, you'll see the app's configuration details.</li>
+				   <li>Look for the section titled "SHA certificate fingerprints" and click on the "Add fingerprint" button.</li>
+				   <li>In the dialog that appears, enter the SHA-1 key in the provided field.</li>
+				   <li>also add SHA-256 keys by clicking on the "Add another fingerprint" link and entering the respective keys in the provided fields.</li>
+				   <li>Click on the "Save" button to add the keys to your Firebase project.</li>
 				   </p>
 				   
+				    <p><strong>Step 8: Deploy firebase function</strong>
+					<p>Following bellow steps to genrate google-service-key</p>
+					<li>Go to the Google Cloud Console:<a href="https://console.cloud.google.com/" target="_blank"> https://console.cloud.google.com/</a></li>
+					<li>Click on the project drop-down and select Project.</li>
+					<li>In the Google Cloud Console, click on the menu icon (☰) in the top-left corner.</li>
+					<li>Under the "IAM & Admin" section, select "Service accounts."</li>
+					<li>Click on the "+ CREATE SERVICE ACCOUNT" button.</li>
+					<li>Provide a name for the service account.</li>
+					<li>You can optionally provide a description for the service account.</li>
+					<li>Click on the "CREATE" button.</li>
+					<li>In the "Create a new service account" window, you can choose to assign roles to the service account. Roles determine what permissions the service account has.</li>
+					<li>Select the appropriate role(s) from the list, or you can assign roles later.</li>
+					<li>After creating the service account, you'll be prompted to create a key. Click on the "CREATE KEY" button.</li>
+					<li>Choose the key type. For service account keys, it's recommended to use JSON format.</li>
+					<li>Click on the "CREATE" button.</li>
+					<li>The service key will be generated, and a JSON file containing the key will be downloaded to your computer.</li>
+					<li>Store the downloaded JSON file containing the service key securely on your server or in your application's environment.</li>
+					<br>
+					<p>Set up Firebase Project</p>
+					<li>If you haven't already, create a Firebase project and set up Firebase in your project directory. You can do this using the Firebase CLI (Command Line Interface). Install the Firebase CLI if you haven't already by running:</li>
+					<li><strong>npm install -g firebase-tools</strong></li>
+					<li>Then, log in to your Google account with Firebase CLI:</li>
+					<li><strong>firebase login</strong></li>
+					<li>aftre, Put file on below path and rename this file name to <strong>google-service-key.json</strong></li>
+					<li><strong>expoleads_app\expoleads_firebase_functions\functions</strong></li>
+					<li>Once you are ready to deploy your Firebase Functions to the cloud, use the following command from your project's root directory:</li>
+					<li><strong>firebase deploy --only functions</strong></li>
+					<li>This command will upload your functions to Firebase, and after a successful deployment, you'll receive URLs for any HTTP functions you've defined.</li>
+					</p>
 		</section>
+		
 			 
 		<section id = "change-app-name"> 
 
-<h3> <strong>5).<u>Change Application name</u></strong></h3>
+<h3> <strong>4).<u>Change Application name</u></strong></h3>
         <p>Change the application name To change the name of a Flutter app, you need to modify the appropriate files and configurations. Here's a step-by-step guide to help you change the app name:		
 		</p>
         <ol>
         <li>Open the Flutter project in your preferred integrated development environment (IDE) or code editor.</li>
-        <li>Locate the <strong>pubspec.yaml</strong> file in the root directory of your Flutter project.</li>
-        <li>Open the <strong>pubspec.yaml</strong>  file and find the <strong>name </strong> field. By default, it should be something like <strong>name: your_app_name</strong>.</li>
-        <li>Change the value of the <strong>name </strong> field to your desired app name. Make sure to follow the naming conventions for Flutter projects (lowercase letters, underscores instead of spaces, etc.). For example, you can change it to <strong>name: my_flutter_app</strong>.</li>
-		<li>Save the <strong>pubspec.yaml</strong> file.</li>
-		<li>Open the <strong>android</strong> directory in your Flutter project.</li>
-		<li>Locate the <strong>app</strong> directory inside the <strong>android</strong> directory and open it.</li>
-		<li>Inside the <strong>app</strong> directory, find the <strong>build.gradle</strong> file (usually located at <strong>android/app/build.gradle</strong>).</li>
-		<li>Open the <strong>build.gradle</strong> file and locate the <strong>defaultConfig</strong> section.</li>
-		<li>In the <strong>defaultConfig</strong> section, find the <strong>applicationId<strong> field. The value of this field represents the unique identifier of your app.</li>
-		<li>Change the value of the <strong>applicationId<strong> field to match your desired app package name. The package name should typically follow the reverse domain name notation. For example, if your domain is <strong>example.com</strong>, you can use <strong>applicationId: com.example.myflutterapp</strong>.</li>
-		<li>Save the <strong>build.gradle</strong> file.</li>
+		<li>Now, you need to update the app name in the Android configuration.</li>
+		<li>Follow below steps and you can change your app name.</li>
+		<li>First you go your app in android folder in same path <strong>"android -> app -> src -> main -> AndroidManifest.xml" </strong></li>
+		<li>After in "AndroidManifest.xml" you find <strong>"label"</strong> keyword and change your app name</li>
+		<li>If you need change your apk name ypu can follow this below steps</li>
+		<li>First you go your app in android folder in same path <strong>"android -> app -> src -> build.gradle"</strong></li>
+		<li>After in "build.gradle" you find <strong>"setProperty"</strong> keyword and can change the app name</li>
+		After in "build.gradle" you find "setProperty" keyword and can change the app name
 		<li>Now, you need to update the app name in the iOS configuration.</li>
 		<li>Open the <strong>ios</strong> directory in your Flutter project.</li>
 		<li>Inside the <strong>ios</strong> directory, find the <strong>Runner</strong> directory and open it.</li>
 		<li>Locate the <strong>Info.plist</strong> file (usually located at <strong>ios/Runner/Info.plist</strong>).</li>
-		<li>Open the <strong>Info.plist<strong> file and find the <strong><key>CFBundleName</key></strong> section.</li>
-		<li>Change the value of the <strong><string></strong> tag below <strong><key>CFBundleName</key></strong> to your desired app name. For example, <strong><string>My Flutter App</string></strong>.</li>
+		<li>Open the <strong>Info.plist<strong> file and find the <strong><key>CFBundleDisplayName</key></strong> section.</li>
+		<li>Change the value of the <strong><string></strong> tag below <strong><key>CFBundleDisplayName</key></strong> to your desired app name. For example, <strong><string>ExpoLeads App</string></strong>.</li>
 		<li>Save the <strong>Info.plist</strong> file.</li>
 		</ol> 
 		<p><strong>Note :</strong>After following these steps, the name of your Flutter app should be updated. Remember to clean and rebuild your project to ensure the changes take effect.</p>
 		</section>	  
 			  
 <section id = "change-logo">
-<h3><strong>6).<u>Change Application Logo</u></strong></h3>
+<h3><strong>5).<u>Change Application Logo</u></strong></h3>
 		<p>Change the launcher icon in <code>Replace the default app icons:<br>
 
 <strong> -> </strong>For Android, navigate to the <strong>android/app/src/main/res</strong> directory in your Flutter project. Replace the icons in the mipmap directories with your custom icons, following the size-specific folders (e.g., mipmap-mdpi, mipmap-hdpi, etc.).<br>
@@ -249,20 +340,22 @@ rel="stylesheet" type="text/css">
 
         
 <section id = "change-packae-name">
- <h3><strong>7).<u>Changing package name</u></strong></h3>
+ <h3><strong>6).<u>Changing package name</u></strong></h3>
 	<p>To change the package name of a Flutter application, you need to update it in several places within your project. Follow these steps to change the package name:</p>
         <ol>
-            <li>Rename the package folder: Open the root directory of your Flutter project and navigate to the lib folder. Rename the package folder to the desired new package name.</li>
-			<li>Update the package name in the pubspec.yaml file: Open the pubspec.yaml file located in the root directory of your project. Update the name field with the new package name.</li>
 			<li>Update the Android package name:</li>
 			<ul>
 				<li>• Open the AndroidManifest.xml file located at android/app/src/main/AndroidManifest.xml.<li>
 				<li>• Change the package attribute of the <manifest> tag to the new package name.</li>
+				<li>• Also you need change <strong>"applicationId"</strong> with your application package name</li>
+				<li>• Go to the following path <strong>(android/app/src /build.gradle )</strong>and change the <strong>"applicationId"</strong> and change</li>
+				<li>• After that update the <strong>"applicationId"</strong> with your application package name</li>
 				</ul>
             <li>Update the iOS bundle identifier:</li>
 			<ul>
 				<li>• Open the Info.plist file located at ios/Runner/Info.plist.<li>
-				<li>• Change the value of the CFBundleIdentifier key to the new package name.</li>
+				<li>• Change the value of the CFBundleIdentifier key to the new package name.Open the <strong>Info.plist</strong> file and find the <strong><key>CFBundleName</key></strong> section.
+		Change the value of the <strong><string></strong> tag below <strong><key>CFBundleName</key></strong> to your desired app bundal name. For example, <strong>"<string>expoleads.scan.exhibitor.data</string>"</strong>.</li>
 				</ul>
             <li>Update import statements and references:</li>
 			<ul>
@@ -271,7 +364,7 @@ rel="stylesheet" type="text/css">
 				</ul>
 			<li>Clean and rebuild the project: Run the following command in the root directory of your project to clean and rebuild your Flutter project:</li>
 			<ul>
-				<li>• flutter clean<li>
+				<li>• flutter clean</li>
 				<li>• flutter pub get</li>
 				<li>• flutter run</li>
 				</ul>
@@ -281,8 +374,8 @@ rel="stylesheet" type="text/css">
 		</section>
 		
 		<section id="relece_build">
-			<h3><strong>8).<u>Sign your release build</u></strong></h3>
-			<p>To sign a release build for CrossFit, you can follow these steps:
+			<h3><strong>7).<u>Sign your release build</u></strong></h3>
+			<p>To sign a release build for ExpoLeads, you can follow these steps:
 			<br>
 			<strong>Step 1: Generate a keystore file</strong>
 			<li>Right-click on the "android" directory and select "Flutter" -> "Open Android module in Android Studio"</li>
@@ -301,53 +394,184 @@ rel="stylesheet" type="text/css">
 		<li>Certificate: Enter some information about yourself for your certificate. This information is not displayed in your app, but is included in your certificate as part of the APK.</li>
 		</p>
 		<li>Once you complete the form, click <strong>OK</strong>.</li>
-		<img alt="" src="images/application/crossFit-jks.png" height = "400" width = "750"></li>
-		<li>Now Replace <strong>crossfit.jks</strong> File and Open <strong>key.properties</strong> File And Change your <strong>.jks</strong> file Detail Like (storePassword, keyPassword, keyAlias, storeFile)</li>
+		<img alt="" src="images/application/expoleads-jks.png" height = "400" width = "750"></li>
+		<li>Now Replace <strong>expoleads.jks</strong> File and Open <strong>key.properties</strong> File And Change your <strong>.jks</strong> file Detail Like (storePassword, keyPassword, keyAlias, storeFile)</li>
 		<li>Now you can follow these steps and Generate Your Release Apk</li>
 		<img alt="" src="images/application/apk.png" height = "200" width = "500"></li>
 		<p>Click on "Build" → then click on "Flutter" → and finally click on "Build APK".<br>
-		<strong>gym_trainer_app\build\app\outputs\apk\release</strong>This space will appear after the build is complete.</p>
+		<strong>expoleads_crm\build\app\outputs\apk\release</strong>This space will appear after the build is complete.</p>
+	</section>	
+	
+	
+	<section id="relece_build">
+			<h3><strong>8).<u>Release App in PlayStore</u></strong></h3>
+			<p>To sign a release app for ExpoLeads, you can follow these steps:
+			<br>
+			
+			<li>Please be aware that there is a registration fee of at least $25 associated with the process.</li>
+			<li>Click on the Create app button in the All apps section. Enter the app details in the "Create app" form.</li>
+			<img alt="" src="images/application/app_release1.png" width = "100%"></li>
+			<li>After creating the app, we have to go through multiple tasks to release the application.</li>
+			<img alt="" src="images/application/app_release2.png" width = "100%"></li>
+			<img alt="" src="images/application/app_release3.png" width = "100%"></li>
+			<img alt="" src="images/application/app_release4.png" width = "100%"></li>
+			<li>However, all these steps will be self-explanatory.<br>
+			<li>At each step, you'll be prompted for information about your application, advertisements, privacy policy, and more.<br>
+			<li>It's important to note that you can proceed to publish only after completing these steps.<br>
+			<li>Make sure to mention everything clearly. Especially the questions about data collection. Because, at any time if Google found that your prescribed information is wrong, your app will not be published or will be taken out, if it's published.<br>
+			<li>After completing these steps, we have to send the app for review. Our app will be published once the review is completed from Google Play team.<br>
+			<li>It's important to note that there's a higher chance of the app getting rejected if it has security or advertising-related issues.<br>
+			<li>Therefore, make sure to thoroughly review your app to ensure that it doesn't have any potential problems in data collection. This will contribute to a smoother and more successful app release experience.<br>
+			</p>
+	</section>	
+	
+	<section id="relece_build">
+			<h3><strong>9).<u>Release App in AppStore</u></strong></h3>
+			<p>To sign a release app for ExpoLeads, you can follow these steps:
+			<br>
+			
+			<li>Before you can build and release your app on the App Store, you need to create a record for it using App Store Connect. But first, you need to register a unique bundle ID for your app. This can be done by logging into your Apple Developer account and following these steps:</li>
+			<li>Open the App IDs page and select + to create a new Bundle ID.</li>
+			
+			<li>Fill out the needed information: App Name and Explicit App ID. If your app needs specific services, select them then select Continue.</li>
+		
+			<li>Review the details and select Register to finish.<br>
+			<li>Now that we have a unique bundle ID, it’s time to create a record for your app on the App Store Connect.<br>
+			<li>It's important to note that you can proceed to publish only after completing these steps.<br>
+			<li>Log in to the App Store Connect and select My Apps then select + then New App.<br>
+			<li>Fill in your app details and make sure iOS is selected, then select Create. From the sidebar, select App Information. In the "General Information" section, select the Bundle ID that you registered above.<br>
+			<li>You’ve set everything up from Apple’s side, and next you'll adjust your Xcode project’s settings to prepare your app for release. Go ahead and fire up Xcode.<br>
+			<li>Open Runner.xcworkspace that is inside your app’s iOS folder. From the Xcode project navigator, select the Runner project. Then, select the Runner target in the main view sidebar.<br>
+			<li>Go to the General tab. In the Identity section, fill out the information and make sure the Bundle Identifier is the one registered on App Store Connect. In the Signing & Capabilities section, make sure Automatically manage signing is checked and select your team.<br>
+			<li>Go to the Deployment section of the Build Settings tab and set iOS Deployment Target to the minimum iOS version you support. Fill out the rest of the information as needed. Next, you'll update your app’s icon and launch image by selecting Assets.xcassets in the Runner folder from Xcode’s project navigator.<br>
+			<li>Open Runner.xcworkspace that is inside your app’s iOS folder. From the Xcode project navigator, select the Runner project. Then, select the Runner target in the main view sidebar.<br>
+			<li>At this point, all the settings have been updated for release and there is a placeholder ready on App Store Connect, which means you can build and release.<br>
+			<li>From the command line, run flutter build ipa to generate an Xcode build archive. You can also append --build-name and --build-number to override the default version and build numbers, respectively. Then go back to Xcode and open the newly created archive from your project's archive directory.<br>
+			<li>Check the information then select Validate to build. Once the archive is successfully validated, select Distribute App.<br>
+			<li>Back on App Store Connect, check the status of your build from the Activities tab. Once it’s ready to release:<br>
+			<li>Go to Pricing and Availability and fill out the required information. From the sidebar, select the status.<br>
+			<li>Select Prepare for Submission and complete all required fields. Select Submit for Review.<br>
+			<li> Your app will now be uploaded to the App Store. Apple will review your app before releasing and keep you updated on the status of your app.<br>
+			</p>
 	</section>	
 	
 		
 		<section id="app_pages">
-			<h3><strong>9).<u>CrossFit App Pages</u></strong></h3>
+			<h3><strong>10).<u>ExpoLeads App Overview</u></strong></h3>
 			</section>
 			<section id="fronted-login">
 			
-			<strong><h4>1). Login Page:</h4></strong>
-			  <p> You will see this login page.You can now login as admin username and password.</p>         
+			<h4><strong>A). Login Screen:</strong></h4>
+			  <p> You will see this login screen.You can now login as admin username and password.</p>         
 			   
 				<img class="image-container" alt="" src="images/application/login_main.png" height = "400" width = "200">           
-			   <p>All users can login from this login page. </p>	 	
+			   <p>All users can login from this login screen. </p>	 	
 		</section>
 	
-<section id = "admin_view"> <strong><h4>2). Admin View</h4></strong>
-<strong> Login Admin ID And Password For Demo</strong><p> <strong>Email :</strong>admin@gmail.com<br><strong>Password :</strong>admin123</p>
-	<img class="image-container" alt="" src="images/application/admin-view.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
-	<img class="image-container" alt="" src="images/application/admin-drawer.png" height = "400" width = "200">
-	<h5>Change Admin Email And PassWord</h5>
-	<li>Open the app and navigate to the Drawer Menu.</li>
-	<li>Select the "Profile" option from the menu to open the profile screen.</li>
-	<img class="image-container" alt="" src="images/application/change-password.png" height = "400" width = "200">
-	<li>On the top right side of the profile screen, click on the pencil icon.</li>
-	<li>A form will appear where you can enter the new email and password.</li>
-	<li>Input the desired new email and password in the respective fields.</li>
-	<li>After making the necessary changes, click on the "Save" button to save the updated information.</li>
-		</section>
+<section id = "admin_view"> <h4><strong>B). Admin</strong></h4>
+<strong> Login Admin Number And OTP For Demo</strong><p> <strong>Phone :</strong> 9876543210<br><strong>OTP :</strong> 123456</p>
+	<img class="image-container" alt="" src="F:\Krupali\ss\home_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="F:\Krupali\ss\dashboard.png" height = "400" width = "200">
+	
+			<section id = "profile_view"> <h4><strong>C). Profile</strong></h4>
+			<li>Open the app and navigate to the Drawer Menu.</li>
+			<li>Select the "Profile" option from the menu to open the Profile screen.</li>
+	<img class="image-container" alt="" src="images/application/profile-screen.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="images/application/update-profile-screen.png" height = "400" width = "200">
+			<li>All the details of the user is mentioned in profile screen.</li>
+			<li>Profile details can be deleted by clicking the "Delete my Account" text available in the bottom of Profile Screen.</li>
+			<li>Profile details can be updated by clicking the edit icon available in the app bar.</li>
+			<li>Every details of user can be edited except user's login phone number in Edit Profile Screen.</li>
+			<li>Click on the "Update" button after the changes are made for update the profile successfully.</li>
 			
-			<section id = "trainer_view"> <strong><h4>3). Trainer View</h4></strong>
-			<strong> Login Trainer ID And Password For Demo</strong><p> <strong>Email :</strong>trainer@gmail.com<br><strong>Password :</strong>trainer</p>
-		<img class="image-container" alt="" src="images/application/trainer-dashbord.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
-		<img class="image-container" alt="" src="images/application/trainer-drawer.png" height = "400" width = "200">
-		
+			
+			<p><section id = "quick_scan_view"> <h4><strong>D). Quick Scan List</strong></h4>  
+
+			<li>Click the "Quick Scan" card in the dashboard screen or select the Scan QR option available in menu button in the bottom of contact list screen .</li>
+	<img class="image-container" alt="" src="images/application/quick-scan-screen.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="images/application/ocr-screen.png" height = "400" width = "200">
+			<li>User can use flash whenever it needs.</li>
+			<li>OCR text recognizing feature is also available in quick scan screen.</li>
+			<li>Click on OCR button, the OCR screen will appear. Just click the photo having text in it of contact person.</li></p> 
+			
+			 <p><section id = "contact_list_view"> <h4><strong>E). Contact List</strong></h4>  
+			<li>Open the app and navigate to the Drawer Menu.</li>
+			<li>Select the "Contact List" option from the menu or click on the contact card available in the dashboard screen to open the Contact List screen.</li>
+	<img class="image-container" alt="" src="images/application/contact-list-screen.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="images/application/contact-list-screen2.png" height = "400" width = "200">
+			<li>All contacts are in contact list screen.</li>
+			<li>To make any contact favourite, click on the favourite icon available in the contact card or select the "Add to Favourite" option in option menu from the contact card.</li>
+			<li>Similarly,To make any contact unfavourite, click on the favourite icon available in the contact card or select the "Remove from Favourite" option in option menu from the contact card.</li>
+			<li>To view full contact details, click on the contact card or select "View" option in option menu in the contact card.</li>
+			<li>Similarly, To edit any contact details, click on "Edit" option in option menu in the contact card.</li>
+			<li>User can add notes for contact. To add notes, click on "Add Note" option in the option menu in the contact card.</li>
+			<li>User can delete contacts. To delete, click on "Delete" option in the option menu in the contact card.</li>
+			<li>User can also download csv file of their contacts. Click on "Download" option available right side in the app bar.</li>
+			<li>If user want to add contact manulaly, Click on the menu button available in bottom right side in the contact screen then select the "Add Contact" opotion.</li>
+			<li>User can scan directly from here by clicking the "Scan QR" in option.</li></p> 
+	
+			 <p><section id = "contact_detail_view"> <h4><strong>F). Contact Detail</strong></h4>  
+			<li>Open the app and navigate to the Drawer Menu.</li>
+			<li>Select the "Contact List" option from the menu to open the Contact List screen then select any of the contact in the list to check the contact details.</li>
+	<img class="image-container" alt="" src="images/application/contact-detail.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="images/application/add-notes.png" height = "400" width = "200">
+			<li>Contact Details can be edit or delete by options available in app bar.</li>
+			<li>User can reach out to their contact through whatsapp, call, email or message options available in the contact detail screen.</li>
+			<li>User can add notes for their refernces by clicking add icon in bottom of contact detail screen.</li>
+			<li>User can edit or delete notes by selecting their option available in right side of note.</li>
+			<li>The QR Code available in the top of the contact detail screen is the contact person QR.</li>
+			<li>User can redirect to contact person website if the url is mentioned in contact details.</li>
+			<li>User can add images in notes and for notes speech to text feature is available for it</li>
+			
+			<p><section id = "Export_csv"> <h4><strong>G).Export CSV</strong></h4>  
+			<li>Open the app and navigate to the Drawer Menu.</li>
+			<li>Select the contact from contact list and show the export icon on appbar.</li>
+	<img class="image-container" alt="" src="F:\Krupali\ss\expo_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="F:\Krupali\ss\export_framed.png" height = "400" width = "200">
+			
+			<li>User can select multiple contact or all contact for export CSV .</li>
+			<li>User tap on export icon then it ask you are you sure you want to export csv?.</li>
+			<li>User confirm the export action, and the application will generate a CSV file containing the contact details.</li>
+			<li>When the user exports the contact list file it will be stored in eternal
+			storage.</li>
+			<li> User can read all of the data that the contact list CSV file has.</li>
+			
+			
+			<p><section id = "filter"> <h4><strong>H).Filter Contact List</strong></h4>  
+			<li>Open the app and navigate to the Drawer Menu.</li>
+			<li>User can open the contact list screen then show the filter icon on appbar.</li>
+	<img class="image-container" alt="" src="F:\Krupali\ss\filter_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="F:\Krupali\ss\country_framed.png" height = "400" width = "200">
+			
+			<li>User tap on filter icon then it show items like date ,tags and country for  filter the contact list . </li>
+			<li>Users can filter their contact list based on specific dates, making it easier to track and manage contacts according to their creation or modification dates.</li>
+			<li>Users can select a date range using a date picker interface and filter the selected date range by clicking on the apply button.</li>
+			<li>Tags provide a way for users to categorize contacts based on specific criteria. Filtering by tags allows users to quickly access contacts associated with a particular tag.</li>
+			<li>Users can select one or multiple tags from a predefined list and filter the selected tags by clicking on the apply button.</li>
+			<li>Filtering contacts by country helps users organize and find contacts based on their geographical location.</li>
+			<li>Users can choose a country from a predefined contry list  or start typing to search for a specific country and selected country filter by clicking on the apply button.</li>
+			<li>Users can apply date, tags, and country filters together for more refined results.</li>
+			<li> A clear filter button allows users to clear all applied filters and view the complete contact list.</li>
+			
+			<section id = "faq">
+			<p> <h3> <strong>11).<u>FAQ</u></strong></h3>
+			<li>Open the app and navigate to the Drawer Menu or click on "Get Started!" button in Dashboard Screen.</li>
+			<li>Select the "FAQ" option from the menu to open the FAQ screen.</li>
+			<img class="image-container" alt="" src="images/application/faq-screen.png" height = "400" width = "200">
+			<li>All questions are mentioned in that screen. Users can also search their queries in search box.</li>
+			<li>Click on the add icon to get the answers of the questions.</li></p> 
 			</section>
 			
-			<section id = "member_view"> <strong><h4>4). Member View</h4></strong>
-			<strong> Login Membre ID And Password For Demo</strong><p> <strong>Email :</strong>member@gmail.com<br><strong>Password :</strong>member</p>
-		<img class="image-container" alt="" src="images/application/membe-dashbord.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
-		<img class="image-container" alt="" src="images/application/member-drawer.png" height = "400" width = "200">
+			
+			
+			
+				<section id = "logout">
+			<p> <h3> <strong>12).<u>Logout</u></strong></h3>
+			<li>Open the app and navigate to the Drawer Menu or click on "Logout" button in Dashboard Screen.</li>
+			<img class="image-container" alt="" src="images/application/admin-drawer.png" height = "400" width = "200">
+			<img class="image-container" alt="" src="images/application/logout.png" height = "400" width = "200">
 		
+			<li>Select "Yes" option for logout.</li></p> 
 			</section>
 			
 
