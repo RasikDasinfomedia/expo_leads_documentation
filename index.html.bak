@@ -98,6 +98,7 @@ rel="stylesheet" type="text/css">
 				  <li><a href="#app_pages">ExpoLeads App Overview</a>
 				  <ul><li><a href="#fronted-login">Login Screen</a></li>
 			<li><a href="#admin_view">Admin</a></li>
+			<li><a href="#dashboard_view">Dashboard</a></li>
 			<li><a href="#profile_view">Profile</a></li>
 			<li><a href="#quick_scan_view">Quick Scan</a></li>
 			<li><a href="#contact_list_view">Contact List</a></li>
@@ -470,90 +471,102 @@ rel="stylesheet" type="text/css">
 	
 <section id = "admin_view"> <h4><strong>B). Admin</strong></h4>
 <strong> Login Admin Number And OTP For Demo</strong><p> <strong>Phone :</strong> 9876543210<br><strong>OTP :</strong> 123456</p>
+
+	</section>
+	
+	<section id = "dashboard_view"> <h4><strong>C). Dashboard</strong></h4>
+	<p>The Expoleads app dashboard offers users powerful tools for capturing, managing, and leveraging lead information, including OCR for extracting text from images, Quick Scan for quickly capturing contact information from business cards,  and tracking leads and contacts effectively.These features combine to provide users with a comprehensive solution for lead generation and management.<p>
+	
 	<img class="image-container" alt="" src="images/application/home_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
 	<img class="image-container" alt="" src="images/application/dashboard_framed.png" height = "400" width = "200">
+	</section>
 	
-			<section id = "profile_view"> <h4><strong>C). Profile</strong></h4>
-			<li>Open the app and navigate to the Drawer Menu.</li>
-			<li>Select the "Profile" option from the menu to open the Profile screen.</li>
+			<section id = "profile_view"> <h4><strong>D). Profile</strong></h4>
+			<li>Open the app on your device. Then, locate the Drawer Menu 
+ icon, typically represented by three horizontal lines or a menu icon,often found in the top-left or top-right corner of the screen. Tap on this icon to open the Drawer Menu.</li>
+			<li>Inside the Drawer Menu, look for the ""Profile"" option. It should be labeled as ""Profile"" and 
+may appear as a list item or button. Tap on this option to navigate to the Profile screen.</li>
 	<img class="image-container" alt="" src="images/application/profile-screen.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
 	<img class="image-container" alt="" src="images/application/update-profile-screen.png" height = "400" width = "200">
-			<li>All the details of the user is mentioned in profile screen.</li>
-			<li>Profile details can be deleted by clicking the "Delete my Account" text available in the bottom of Profile Screen.</li>
-			<li>Profile details can be updated by clicking the edit icon available in the app bar.</li>
-			<li>Every details of user can be edited except user's login phone number in Edit Profile Screen.</li>
-			<li>Click on the "Update" button after the changes are made for update the profile successfully.</li>
+			<li>On the Profile screen, you'll find all the details of the user displayed. This includes information such as name, email, profile picture, and any other relevant details.</li>
+			<li>To delete the user's account, locate the ""Delete my Account"" text at the bottom of the Profile screen. Tap on this text to initiate the account deletion process.</li>
+			<li>If you want to update your profile details, tap on the edit icon typically found in the app bar at the top of the screen. This will navigate you to the Edit Profile screen.</li>
+			<li>On the Edit Profile screen, you can modify any details of the user except for the login phone number. Make the desired changes, then tap on the ""Update"" button to save 
+            the changes.</li>
+			<li>After making the necessary changes in the Edit Profile screen, tap on the ""Update"" button update the user's profile successfully.</li>
 			
-			
-			<p><section id = "quick_scan_view"> <h4><strong>D). Quick Scan List</strong></h4>  
+			</section>
+			<p><section id = "quick_scan_view"> <h4><strong>E). Quick Scan List</strong></h4>  
 
-			<li>Click the "Quick Scan" card in the dashboard screen or select the Scan QR option available in menu button in the bottom of contact list screen .</li>
+			<li>Users can quickly access the scanning functionality through either the ""Quick Scan"" card on the Dashboard screen or the ""Scan QR"" option in the menu button located at the bottom of the Contact List screen.</li>
 	<img class="image-container" alt="" src="images/application/quick-scan-screen.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
 	<img class="image-container" alt="" src="images/application/ocr-screen.png" height = "400" width = "200">
-			<li>User can use flash whenever it needs.</li>
-			<li>OCR text recognizing feature is also available in quick scan screen.</li>
-			<li>Click on OCR button, the OCR screen will appear. Just click the photo having text in it of contact person.</li></p> 
+			<li>During the scanning process, users have the option to enable or disable the flash as needed. This feature ensures optimal visibility in various lighting conditions</li>
+			<li>The Quick Scan screen includes an OCR (Optical Character Recognition) button, allowing users to extract text from images. Upon clicking this button, the OCR screen appears, providing users with the ability to capture photos containing text.</li>
+			<li>Users can simply click a photo containing text, such as contact information, using their device's camera. The OCR feature will then analyze the image and extract the text,making it available for further actions or processing.</li></p> 
 			
-			 <p><section id = "contact_list_view"> <h4><strong>E). Contact List</strong></h4>  
-			<li>Open the app and navigate to the Drawer Menu.</li>
-			<li>Select the "Contact List" option from the menu or click on the contact card available in the dashboard screen to open the Contact List screen.</li>
+			 <p><section id = "contact_list_view"> <h4><strong>F). Contact List</strong></h4>  
+			<li>Open the app on your device and access the Drawer Menu by tapping on the menu icon,usually located in the top-left or top-right corner of the screen.</li>
+			<li>Inside the Drawer Menu, find and tap on the ""Contact List"" option. This will navigate the user to the Contact List screen.</li>
 	<img class="image-container" alt="" src="images/application/contact-list-screen.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
 	<img class="image-container" alt="" src="images/application/contactlist_framed.png" height = "400" width = "200">
-			<li>All contacts are in contact list screen.</li>
-			<li>To make any contact favourite, click on the favourite icon available in the contact card or select the "Add to Favourite" option in option menu from the contact card.</li>
-			<li>Similarly,To make any contact unfavourite, click on the favourite icon available in the contact card or select the "Remove from Favourite" option in option menu from the contact card.</li>
-			<li>To view full contact details, click on the contact card or select "View" option in option menu in the contact card.</li>
-			<li>Similarly, To edit any contact details, click on "Edit" option in option menu in the contact card.</li>
-			<li>User can add notes for contact. To add notes, click on "Add Note" option in the option menu in the contact card.</li>
-			<li>User can delete contacts. To delete, click on "Delete" option in the option menu in the contact card.</li>
-			<li>User can also download csv file of their contacts. Click on "Download" option available right side in the app bar.</li>
-			<li>If user want to add contact manulaly, Click on the menu button available in bottom right side in the contact screen then select the "Add Contact" opotion.</li>
-			<li>User can scan directly from here by clicking the "Scan QR" in option.</li></p> 
+			<li>Users can directly access the Contact List screen by tapping on a contact card available on the Dashboard screen.</li>
+			<li>Users can mark contacts as favorites or unfavorites by tapping on the favorite icon within the contact card or selecting the ""Add to Favourite"" or ""Remove from Favourite"" option from the contact card's menu.</li>
+			<li>To view the complete details of a contact, users can tap on the contact card or select the ""View"" option from the contact card's menu.</li>
+			<li>Users can edit contact details by selecting the "Edit" option from the contact card's menu.</li>
+			<li>To add notes for a contact, users can select the "Add Note" option from the contact card's menu.</li>
+			<li>Users can delete contacts by selecting the "Delete" option from the contact card's menu.</li>
+			<li>Users can download a CSV file containing their contacts by tapping on the ""Download"" option available on the right side of the app bar.</li>
+			<li>To manually add a contact, users can tap on the menu button located in the bottom right corner of the Contact List screen and select the ""Add Contact"" option.</li>
+			<li>Users can directly scan a QR code by selecting the "Scan QR" option available in the menu.</li>
+			 
 	
-			 <p><section id = "contact_detail_view"> <h4><strong>F).Contact Detail</strong></h4>  
-			<li>Open the app and navigate to the Drawer Menu.</li>
-			<li>Select the "Contact List" option from the menu to open the Contact List screen then select any of the contact in the list to check the contact details.</li>
+			 <p><section id = "contact_detail_view"> <h4><strong>G).Contact Detail</strong></h4>  
+			<li>Open the app on your device and access the Drawer Menu by tapping on the menu icon, typically located in the top-left or top-right corner of the screen.</li>
+			<li>Inside the Drawer Menu, locate and tap on the ""Contact List"" option. This will open the Contact List screen.</li>
 	<img class="image-container" alt="" src="images/application/contact-detail.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
 	<img class="image-container" alt="" src="images/application/add-notes.png" height = "400" width = "200">
-			<li>Contact Details can be edit or delete by options available in app bar.</li>
-			<li>User can reach out to their contact through whatsapp, call, email or message options available in the contact detail screen.</li>
-			<li>User can add notes for their refernces by clicking add icon in bottom of contact detail screen.</li>
-			<li>User can edit or delete notes by selecting their option available in right side of note.</li>
-			<li>The QR Code available in the top of the contact detail screen is the contact person QR.</li>
-			<li>User can redirect to contact person website if the url is mentioned in contact details.</li>
-			<li>User can add images in notes and for notes speech to text feature is available for it</li>
+			<li>From the list of contacts displayed on the Contact List screen, tap on the desired contact to view its details.</li>
+			<li>Once the contact details are displayed, users can view various information about the contact, including name, phone number, email, etc.</li>
+			<li>Users can edit or delete the contact by using the options available in the app bar at the top of the screen.</li>
+			<li>Users can communicate with the contact through various options such as WhatsApp, call, email, or message, which are available on the contact detail screen.</li>
+			<li>Users can add notes for their reference by clicking the add icon at the bottom of the contact detail screen.</li>
+			<li>Users can edit or delete notes by selecting the respective options available on the right side of the note.</li>
+			<li>The QR code displayed at the top of the contact detail screen is the contact person's QR code. If a URL is mentioned in the contact details, users can redirect to the contact person's website.</li>
+			<li>Users can add images to notes, and for notes, a speech-to-text feature is available for convenience.</li>
 			
-			<p><section id = "export_CSV"> <h4><strong>G).Export CSV</strong></h4>  
-			<li>Open the app and navigate to the Drawer Menu.</li>
-			<li>Select the contact from contact list and show the export icon on appbar.</li>
+			<p><section id = "export_CSV"> <h4><strong>H).Export CSV</strong></h4>  
+			<li>Open the app on ypur device and access the Drawer Menu by tapping on the menu icon, usually located in the top-left or top-right corner of the screen.</li>
+			<li>Inside the Drawer Menu, locate and tap on the ""Contact List"" option. This will open the Contact List screen.</li>
 	<img class="image-container" alt="" src="images/application/expo_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
 	<img class="image-container" alt="" src="images/application/export_framed.png" height = "400" width = "200">
 			
-			<li>User can select multiple contact or all contact for export CSV .</li>
-			<li>User tap on export icon then it ask you are you sure you want to export csv?.</li>
-			<li>User confirm the export action, and the application will generate a CSV file containing the contact details.</li>
-			<li>When the user exports the contact list file it will be stored in eternal
-			storage.</li>
-			<li> User can read all of the data that the contact list CSV file has.</li>
+			<li>From the Contact List screen, users can select multiple contacts or choose to export all contacts to a CSV file.</li>
+			<li>Once contacts are selected, the app will display an export icon on the app bar at the top of the screen.</li>
+			<li>Users can tap on the export icon to initiate the export process.</li>
+			<li>After tapping on the export icon, the app will display a confirmation prompt asking, ""Are you sure you want to export CSV?""</li>
+			<li>Users can confirm the export action by tapping on a "Yes" or "Confirm" button in the confirmation prompt.</li>
+			<li>Upon confirming the export action, the application will generate a CSV file containing the contact details of the selected contacts.</li>
+			<li>The exported CSV file will be stored in the device's external storage or a designated folder within the app's directory.</li>
+			<li>Users can access the exported contact list CSV file and read all of the data it contains, including contact names, phone numbers, emails, etc.</li>
 			
-			
-			<p><section id = "filter"> <h4><strong>H).Filter Contact List</strong></h4>  
-			<li>Open the app and navigate to the Drawer Menu.</li>
-			<li>User can open the contact list screen then show the filter icon on appbar.</li>
+			<p><section id = "filter"> <h4><strong>I).Filter Contact List</strong></h4>  
+			<li>Open the app on your device  and access the Drawer Menu by tapping on the menu icon, usually located in the top-left or top-right corner of the screen.</li>
+			<li>From the Drawer Menu, select the "Contact List" option. This will open the Contact List screen.</li>
 	<img class="image-container" alt="" src="images/application/filter_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
-	<img class="image-container" alt="" src="images/application/country_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
-	<img class="image-container" alt="" src="images/application/tags_framed.png" height = 
+	<img class="image-container" alt="" src="images/application/tags_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
+	<img class="image-container" alt="" src="images/application/country_framed.png" height = 
 	"400" width = "200">
 			
-			<li>User tap on filter icon then it show items like date ,tags and country for  filter the contact list . </li>
-			<li>Users can filter their contact list based on specific dates, making it easier to track and manage contacts according to their creation or modification dates.</li>
-			<li>Users can select a date range using a date picker interface and filter the selected date range by clicking on the apply button.</li>
-			<li>Tags provide a way for users to categorize contacts based on specific criteria. Filtering by tags allows users to quickly access contacts associated with a particular tag.</li>
-			<li>Users can select one or multiple tags from a predefined list and filter the selected tags by clicking on the apply button.</li>
-			<li>Filtering contacts by country helps users organize and find contacts based on their geographical location.</li>
-			<li>Users can choose a country from a predefined contry list  or start typing to search for a specific country and selected country filter by clicking on the apply button.</li>
+			<li>On the Contact List screen, the app will display a filter icon on the app bar at the top of the screen. </li>
+			<li>Users can tap on the filter icon to initiate the filtering process.</li>
+			<li>Upon tapping the filter icon, users will be presented with options to filter contacts based on specific criteria such as date, tags, and country.</li>
+			<li>Users can filter contacts based on specific dates by selecting a date range using a date picker interface. After selecting the desired date range, users can apply the filter by clicking on the apply button.</li>
+			<li>Tags provide a way for users to categorize contacts based on specific criteria. Users can filter contacts by selecting one or multiple tags from a predefined list. After selecting the desired tags, users can apply the filter by clicking on the apply button.</li>
+			<li>Users can filter contacts based on their geographical location by selecting a country from a predefined list or by typing to search for a specific country. After selecting the desired country, users can apply the filter by clicking on the apply button.</li>
 			<li>Users can apply date, tags, and country filters together for more refined results.</li>
-			<li> A clear filter button allows users to clear all applied filters and view the complete contact list.</li>
+			<li>A clear filter button allows users to clear all applied filters and view the complete contact list without any filtering.</li>
+			
 			
 			<section id = "faq">
 			<p> <h3> <strong>11).<u>FAQ</u></strong></h3>
