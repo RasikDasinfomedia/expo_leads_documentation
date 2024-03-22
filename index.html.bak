@@ -475,7 +475,7 @@ rel="stylesheet" type="text/css">
 	</section>
 	
 	<section id = "dashboard_view"> <h4><strong>C). Dashboard</strong></h4>
-	<p>The Expoleads app dashboard offers users powerful tools for capturing, managing, and leveraging lead information, including OCR for extracting text from images, Quick Scan for quickly capturing contact information from business cards,  and tracking leads and contacts effectively.These features combine to provide users with a comprehensive solution for lead generation and management.<p>
+	<p>The Expoleads app dashboard offers users powerful tools for capturing, managing, and leveraging lead information, including OCR for extracting text from images, Quick Scan for quickly capturing contact information from business cards,  and tracking leads and contacts effectively.These features combine to provide users with a comprehensive solution for lead generation and management.</p>
 	
 	<img class="image-container" alt="" src="images/application/home_framed.png" height = "400" width = "200">&nbsp;&nbsp;&nbsp;
 	<img class="image-container" alt="" src="images/application/dashboard_framed.png" height = "400" width = "200">
@@ -583,8 +583,8 @@ may appear as a list item or button. Tap on this option to navigate to the Profi
 				<section id = "logout">
 			<p> <h3> <strong>12).<u>Logout</u></strong></h3>
 			<li>Open the app and navigate to the Drawer Menu or click on "Logout" button in Dashboard Screen.</li>
-			<img class="image-container" alt="" src="images/application/admin-drawer.png" height = "400" width = "200">
-			<img class="image-container" alt="" src="images/application/logout.png" height = "400" width = "200">
+			<img class="image-container" alt="" src="images/application/dashboard_framed.png" height = "400" width = "200">
+			<img class="image-container" alt="" src="images/application/logoutnew_framed.png" height = "400" width = "200">
 		
 			<li>Select "Yes" option for logout.</li></p> 
 			</section>
